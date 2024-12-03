@@ -1,0 +1,53 @@
+/* Enhanced Editor Styles */
+.tiptap {
+    border: 1px solid #ccc; /* Add a light border around the editor */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 16px; /* Add padding for better spacing */
+    min-height: 200px; /* Set a minimum height for the editor */
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-size: 16px; /* Adjust font size for better readability */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    overflow-y: auto; /* Ensure scrollability for large content */
+  }
+  
+  /* Editor focus styling */
+  .tiptap:focus-within {
+    border-color: #007bff; /* Highlight the border on focus */
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5); /* Add glow effect */
+  }
+  
+  /* Paragraph styles */
+  .tiptap p {
+    margin: 0 0 12px; /* Add spacing between paragraphs */
+    line-height: 1.6; /* Improve line spacing for readability */
+  }
+  
+  /* Placeholder text style */
+  .tiptap [data-placeholder]::before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    font-style: italic;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  /* Add scrollbar styling */
+  .tiptap::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .tiptap::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .tiptap::-webkit-scrollbar-thumb:hover {
+    background-color: #007bff; /* Highlight on hover */
+  }
+  
+  .tiptap::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
